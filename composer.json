@@ -18,10 +18,7 @@
 					"type": "git",
 					"url": "https://github.com/WordPress/WordPress",
 					"reference": "3.7.1"
-				},
-				"extra": {
-			        "installer-name": "app"
-			    }
+				}
 			}
 		}
 	],
