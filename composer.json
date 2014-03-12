@@ -1,4 +1,17 @@
 {
+	"name": "mpress/wp-install",
+	"description": "Setup a new WordPress installation via Composer",
+	"license": "GPL-2.0+",
+	"type": "project",
+	"homepage": "https://github.com/woodent/wp-composer",
+	"authors": [
+		{
+			"name": "Micah Wood",
+			"email": "micah@mpress.co",
+			"homepage": "http://micahwood.me",
+			"role": "Developer"
+		}
+	],
 	"repositories": [
 		{
             "type":"composer",
