@@ -36,18 +36,9 @@
 		}
 	},
 	"scripts": {
-		"pre-install-cmd": [
-			"source scripts/wp-content-init.sh . content"
-		],
-		"pre-update-cmd": [
-			"source scripts/wp-content-init.sh . content"
-		],
 		"post-autoload-dump": [
 			"rm -r vendor/autoload.php",
-			"echo 'deny from all' > vendor/.htaccess",
-			"source scripts/wp-fixup.sh ./wp",
-			"source scripts/wp-reg-theme-dir.sh ./content/mu-plugins",
-	  		"source scripts/permissions.sh"
+			"echo 'deny from all' > vendor/.htaccess"
 		]
 	}
 }
