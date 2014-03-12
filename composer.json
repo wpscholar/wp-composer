@@ -30,7 +30,7 @@
 	},
 	"extra": {
 		"installer-paths": {
-			"wp": [ "wordpress/wordpress" ],
+			"cms": [ "wordpress/wordpress" ],
 			"content/plugins/{$name}": [ "type:wordpress-plugin" ],
 			"content/themes/{$name}": [ "type:wordpress-theme" ],
 			"content/mu-plugins/{$name}": [ "type:wordpress-muplugin" ]

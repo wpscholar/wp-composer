@@ -34,7 +34,7 @@ if( file_exists( dirname( __DIR__ ) . '/wp-config.php' ) ) {
 }
 
 // Directory Names
-define( 'WP_ROOT_DIRNAME', 'wp' );
+define( 'WP_ROOT_DIRNAME', 'cms' );
 define( 'WP_CONTENT_DIRNAME', 'content' );
 
 // Database Credentials (required)
