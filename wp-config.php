@@ -29,9 +29,12 @@ function getenv_default ( $name, $default ) {
  * Optionally allow a custom wp-config.php file just outside of this directory to be loaded. This option is for
  * users who are more comfortable with a typical php configuration file.
  */
-if( file_exists( dirname( __DIR__ ) . '/wp-config.php' ) ) {
-	include( dirname( __DIR__ ) . '/wp-config.php' );
+if( file_exists( dirname( dirname( __FILE__ ) ) . '/wp-config.php' ) ) {
+	include( dirname( dirname( __FILE__ ) ) . '/wp-config.php' );
 }
+
+// Set the current directory as the site root
+define( 'SITE_ROOT', dirname( __FILE__ ) );
 
 // Directory Names
 define( 'WP_ROOT_DIRNAME', 'cms' );
@@ -80,9 +83,6 @@ if( ! defined( 'SCRIPT_DEBUG' ) )
 	define( 'SCRIPT_DEBUG', getenv( 'SCRIPT_DEBUG' ) );
 if( ! defined( 'SAVEQUERIES' ) )
 	define( 'SAVEQUERIES', getenv( 'SAVEQUERIES' ) );
-
-// Set the current directory as the site root
-define( 'SITE_ROOT', __DIR__ );
 
 // Set the domain name
 if( ! defined( 'DOMAIN_NAME' ) )

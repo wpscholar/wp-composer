@@ -1,3 +1,3 @@
 <?php
 define( 'WP_USE_THEMES', true );
-require( './cms/wp-blog-header.php' );
+require( dirname( __FILE__ ) . '/cms/wp-blog-header.php' );
